@@ -1,0 +1,38 @@
+/*
+                     //get 25 coordinates here
+                     var coordinates = [];
+                     //first row
+                     coordinates.push({x0: startX, y0: startY});
+                     coordinates.push({x1: (halfWidth / 2) + startX, y0: startY});
+                     coordinates.push({x2: (halfWidth) + startX, y0: startY});
+                     coordinates.push({x3: halfWidth + (halfWidth / 2) + startX, y0: startY});
+                     coordinates.push({x4: width + startX, y0: startY});
+                     
+                     //second row
+                     coordinates.push({x0: startX, y1: halfHeight / 2 + startY});
+                     coordinates.push({x1: halfWidth / 2 + startX, y1: halfHeight / 2 + startY});
+                     coordinates.push({x2: halfWidth + startX, y1: halfHeight / 2 + startY});
+                     coordinates.push({x3: halfWidth + halfWidth / 2 + startX, y1: halfHeight / 2 + startY});
+                     coordinates.push({x4: width + startX, y1: halfHeight / 2 + startY});
+                     
+                     //third row
+                     coordinates.push({x0: startX, y2: halfHeight + startY});
+                     coordinates.push({x1: halfWidth / 2 + startX, y2: halfHeight + startY});
+                     coordinates.push({x2: halfWidth + startX, y2: halfHeight + startY});
+                     coordinates.push({x3: halfWidth + halfWidth / 2 + startX, y2: halfHeight + startY});
+                     coordinates.push({x4: width + startX, y2: halfHeight + startY});
+                     
+                     //fouth row
+                     coordinates.push({x0: startX, y3: halfHeight + halfHeight / 2 + startY});
+                     coordinates.push({x1: halfWidth / 2 + startX, y3: halfHeight + halfHeight / 2 + startY});
+                     coordinates.push({x2: halfWidth + startX, y3: halfHeight + halfHeight / 2 + startY});
+                     coordinates.push({x3: halfWidth + halfWidth / 2 + startX, y3: halfHeight + halfHeight / 2 + startY});
+                     coordinates.push({x4: width + startX, y3: halfHeight + halfHeight / 2 + startY});
+                     
+                     //fifth row
+                     coordinates.push({x0: startX, y4: height + startY});
+                     coordinates.push({x1: halfWidth / 2 + startX, y4: height + startY});
+                     coordinates.push({x2: halfWidth + startX, y4: height + startY});
+                     coordinates.push({x3: halfWidth + halfWidth / 2 + startX, y4: height + startY});
+                     coordinates.push({x4: width + startX, y4: height + startY});
+                     */

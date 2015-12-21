@@ -1,0 +1,29 @@
+<ion-content class="home-background">
+    <div ng-if="showGame(game.position)" class="main-layout-game">
+        <div id="b" ng-init="loadCanvas()" class="game-board">
+            <canvas on-touch="onTouch()" id="game-canvas"></canvas>
+        </div>
+        <div style="height: 19%;">
+            game info
+        </div>
+    </div>
+</ion-content>
+<style>
+    .main-layout-game{
+        height: 100%;
+        padding-top: 10px;
+        /*background-color: #1aff4c;*/
+    }
+    .scroll{
+        height: 99.9%;
+    }
+    .game-board{
+        height: 79%;
+        /*border: solid 1px silver;*/
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+
+

@@ -1,0 +1,46 @@
+<ion-header-bar class="bar-stable" >
+    <h1 class="title">BaghChal</h1>
+    <a ng-click="homePage()" class="button button-icon icon ion-settings"></a>
+</ion-header-bar>
+<ion-content>
+    <div ng-if="!me.info.player" ng-init="showLoading(true)" >
+        
+    </div>
+    <div collaborate>
+        <div ng-if="me.info.player" ng-init="showLoading(false)">
+            <div class="list">
+                <div class="item item-avatar">
+                    <img ng-src="img/{{ me.info.player}}.jpg">
+                    <h2>{{ me.info.player}}</h2>
+                    <p>{{ me.info.user}}</p>
+                </div>
+            </div>
+
+            <div class="item item-divider">
+                Members
+            </div>
+            <div class="list" >
+                <div ng-repeat="member in members" >
+                    <div class="card" ng-if="member.user !== me.info.user" >
+                        <div class="item item-avatar item-button-right">
+                            <img ng-src="img/{{ member.player}}.jpg">
+                            <h2>{{ member.player}}</h2>
+                            <p>{{ member.user}}</p>
+                            <button ng-if="me.info.player !== member.player" ng-disabled="isDisabled" ng-click="challenge(member.user)" class="button button-clear button-positive">
+                                <i class="icon ion-ios-game-controller-b"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+
+
+<!--<div ng-show="Auth.authenticated()">
+   I'm logged in
+</div>
+<div ng-hide="Auth.authenticated()">
+  I'm not logged in
+</div>-->
